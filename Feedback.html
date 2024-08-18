@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Feedback Form</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="feedbackstyle.css">
+    <style>
+        
+    </style>
+</head>
+<body>
+    <script src="feedback.js" defer></script>
+    <button class="go-top-button">
+        <img src="backbutton.png" alt="arrow up">
+    </button>
+    <header>
+        <div class="navbar">
+            <img src="logo1.PNG" class="logo">
+            <ul>
+                <li><a href="/student2/indexhome.html">Home</a></a></li>
+                <li><a href="/student3/team.html">About us</a></a></li>
+                <li><a href="/student4/sitemap.html">Site Map</a></a></li>
+                
+                <li><a href="/student3/Profile.html">User Profile</a></a></li>
+                <li><a href="/student2/Feedback.html">Feedback</a></a></li>
+            </ul>
+        </div>
+    </header>
+
+    <form action="" method="POST" id="feedback-form-container">
+        <div class="border">
+            <h1>Feedback Form</h1>
+            <table>
+                <tr>
+                    <td>
+                        <label>Firstname*</label>
+                        <br/>
+                        <input type="text" name="Firstname" class="txt" required>
+                    </td>
+                    <td>
+                        <label>Lastname*</label>
+                        <br/>
+                        <input type="text" name="Lastname" class="txt" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>Email*</label>
+                        <br/>
+                        <input type="email" name="Email" class="txt" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <label>How do you rate your overall experience</label>
+                        <br/>
+                        <input type="radio" name="rate" value="bad">Bad
+                        <input type="radio" name="rate" value="average">Average
+                        <input type="radio" name="rate" value="good">Good
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <label>Was this your first visiting?</label>
+                        <br/>
+                        <input type="radio" name="visit" value="yes">Yes
+                        <input type="radio" name="visit" value="no">No
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <label>Was this website informative and easy to navigate through?</label>
+                        <br/>
+                        <input type="radio" name="informative" value="yes">Yes
+                        <input type="radio" name="informative" value="no">No
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <label>Would you recommend our services?</label>
+                        <br/>
+                        <input type="radio" name="recommend" value="yes">Yes
+                        <input type="radio" name="recommend" value="no">No
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <label>Comment*</label>
+                        <br/>
+                        <textarea class="txtarea"></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <div class="rating-box">
+                            <header>How satisfied are you with our services?</header>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2"><button type="submit" class="button">Submit</button></td>
+                </tr>
+            </table>
+        </div>
+    </form>
+    <div id="feedback-dialog" class="dialog">
+        <span class="close-btn">&times;</span>
+        <h2>Feedback Response</h2>
+        <p id="feedback-response"></p>
+      </div>
+    <div id="preview-container"></div>
+
+    <footer>
+        <p>Copyright &copy;  All rights reserved</p>
+    </footer>
+</body>
+</html>

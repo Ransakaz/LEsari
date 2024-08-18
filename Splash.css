@@ -1,0 +1,76 @@
+.bckgif {
+    background-image: url("/student1/b4N.gif");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 100vh; 
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+h1{
+    text-align: center;
+}
+.mission {
+    align-items: center;
+}
+.mission-box {
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    backdrop-filter: blur(10px);
+    border: solid 2px #FFFFFF11;
+    border-radius: 10px;
+    box-shadow: 0 0 25px 5px #000000FF;
+    width: 75%;
+    max-width: 1000px;
+    min-height: 250px;
+    z-index: 1;
+}
+.mission{
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: medium;
+}
+.developers {
+    position: absolute;
+    display: flex;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    backdrop-filter: blur(10px);
+    border: solid 2px #FFFFFF11;
+    border-radius: 10px;
+    box-shadow: 0 0 25px 5px #000000FF;
+    width: 75%;
+    max-width: 1000px;
+    min-height: 450px;
+    z-index: 1;
+    align-items: center;
+}
+
+.developers svg,img{
+    width: 200px;
+    height: 200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.developers h1{
+    margin-left: 40%;
+    margin-top: -34%;
+}
+.profile_image{
+    display: flex;
+    margin-left: -55%;
+}
+.profile_image img,svg {
+    margin: 25px;    
+}
+.profile_image p{
+    text-align: center;
+    font-family: "Arial Black", Arial, sans-serif;
+    font-weight: bold;
+}
+
